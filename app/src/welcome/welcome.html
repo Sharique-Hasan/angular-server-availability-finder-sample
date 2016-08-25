@@ -1,0 +1,8 @@
+<div class="welcome">
+  <span class="message" ng-bind="vm.welcomeMessage"></span>
+  <div ng-repeat="server in vm.onlineServers">
+    <h3><b>Url</b>: {{server.url}}</h3>
+    <h4><b>Priority</b>: {{server.priority}}</h4>
+  </div>
+  <h2 ng-if="vm.error"><em>{{vm.error}}</em></h2>
+</div>
